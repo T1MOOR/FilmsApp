@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FilmCell" id="6Hq-mH-RD2" customClass="FilmCollectionViewCell" customModule="FilmsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5DH-ih-9gh">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="260"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sNB-Jz-imr">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="220"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="144" id="Y1v-SY-ob7"/>
+                            <constraint firstAttribute="height" constant="220" id="c5S-ed-uWq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK2-m9-Oib">
+                        <rect key="frame" x="3" y="244" width="27" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название фильма" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqX-T9-iJx">
+                        <rect key="frame" x="3" y="225" width="115.33333333333333" height="18"/>
+                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.6" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBb-8m-E1O">
+                        <rect key="frame" x="110" y="199" width="21" height="18"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aBb-8m-E1O" firstAttribute="leading" secondItem="5DH-ih-9gh" secondAttribute="leading" constant="110" id="8TF-7I-oyu"/>
+                    <constraint firstAttribute="bottom" secondItem="aBb-8m-E1O" secondAttribute="bottom" constant="43" id="Dkx-vs-ZVB"/>
+                    <constraint firstItem="gqX-T9-iJx" firstAttribute="top" secondItem="sNB-Jz-imr" secondAttribute="bottom" constant="5" id="HaN-C6-E1b"/>
+                    <constraint firstItem="sNB-Jz-imr" firstAttribute="leading" secondItem="5DH-ih-9gh" secondAttribute="leading" id="JFI-AW-cPT"/>
+                    <constraint firstAttribute="trailing" secondItem="aBb-8m-E1O" secondAttribute="trailing" constant="8" id="SAU-mO-uLw"/>
+                    <constraint firstItem="sNB-Jz-imr" firstAttribute="top" secondItem="5DH-ih-9gh" secondAttribute="top" id="Vbr-bh-pFQ"/>
+                    <constraint firstItem="gqX-T9-iJx" firstAttribute="leading" secondItem="5DH-ih-9gh" secondAttribute="leading" constant="3" id="Wfn-f4-Kcl"/>
+                    <constraint firstItem="LK2-m9-Oib" firstAttribute="leading" secondItem="5DH-ih-9gh" secondAttribute="leading" constant="3" id="Yc6-PJ-V64"/>
+                    <constraint firstItem="LK2-m9-Oib" firstAttribute="top" secondItem="gqX-T9-iJx" secondAttribute="bottom" constant="1" id="fdX-lD-ez1"/>
+                    <constraint firstItem="sNB-Jz-imr" firstAttribute="baseline" secondItem="aBb-8m-E1O" secondAttribute="firstBaseline" constant="8" id="qhE-QB-gWN"/>
+                    <constraint firstAttribute="trailing" secondItem="sNB-Jz-imr" secondAttribute="trailing" id="rrb-KQ-FxS"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="145" height="264"/>
+            <connections>
+                <outlet property="filmTitleLabel" destination="gqX-T9-iJx" id="2xL-Jn-EVJ"/>
+                <outlet property="posterPreviewImageView" destination="sNB-Jz-imr" id="lbP-qO-uqW"/>
+                <outlet property="ratingLabel" destination="aBb-8m-E1O" id="y3r-aj-9vM"/>
+                <outlet property="releaseYearLabel" destination="LK2-m9-Oib" id="sSg-s7-XYB"/>
+            </connections>
+            <point key="canvasLocation" x="-1254.1984732824426" y="45.774647887323944"/>
+        </collectionViewCell>
+    </objects>
+</document>

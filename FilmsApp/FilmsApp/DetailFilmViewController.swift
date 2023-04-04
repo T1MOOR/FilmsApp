@@ -8,7 +8,21 @@
 import UIKit
 
 class DetailFilmViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var posterImageView: UIImageView!
+    
+    @IBOutlet weak var filmTitleLabel: UILabel!
+    
+    @IBOutlet weak var releaseYearLabel: UILabel!
+    
+    @IBOutlet weak var ratingLabel: UILabel!
+    
+    @IBOutlet weak var galleryCollection: UICollectionView!
+    
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,6 +30,8 @@ class DetailFilmViewController: UIViewController {
     }
     
 
+    @IBAction func tapGestureAction(_ sender: UITapGestureRecognizer) {
+    }
     /*
     // MARK: - Navigation
 
